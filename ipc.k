@@ -26,10 +26,10 @@ conn 4: "v"
 
 0 / passing variables over IPC
 
-.function: {[x] z::x} / in remote k instance - assigns x to global var z
+function: {[x] z::x} / in remote k instance - assigns x to global var z
 
 array: 3 4 5
-conn 4: ,(`.function;array) /I'm not 100% sure how this works
+conn 4: (`function;array) /I'm not 100% sure how this works
 
 0 / passing table over IPC
 
