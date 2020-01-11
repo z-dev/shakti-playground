@@ -9,11 +9,20 @@ conn 4: "life"
 
 n:1000000
 
-conn 4: "v: 0"
+0 / synchronous communication
+
+conn 4: "v: 0" / sync execution
 incrementVNtimes: n#,("v: v + 1")
 conn 4: incrementVNtimes;
 "finished"
 conn 4: "v"
+
+conn 3: "v: 0" / async execution
+incrementVNtimes: n#,("v: v + 1")
+conn 3: incrementVNtimes;
+"finished"
+conn 4: "v"
+
 
 0 / passing variables over IPC
 
