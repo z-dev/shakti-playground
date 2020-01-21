@@ -1,0 +1,5 @@
+(2147483647;2147483647 + 1;2147483647+2)
+
+/ goes to infinity then back to negative numbers
+
+(2147483647j;2147483647j + 1;2147483647j+2)
