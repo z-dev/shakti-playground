@@ -1,4 +1,4 @@
-x: 0: "text.text"
+x: 0: "./data/text.text"
 x
 
 array: 1 2 3
